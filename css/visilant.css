@@ -1,0 +1,415 @@
+/*** sideNavigation ***/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.main li {
+  list-style: circle;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #fafbfe;
+    min-height: 100vh;
+    width: calc(100% - 200px); /* Subtract the width of the sidebar */
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    background-color: #fafbfe;
+    margin-left: 200px; /* Set margin-left equal to the width of the sidebar */
+}
+
+#sidebar {
+    width: 280px;
+    min-width: 70px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px; /* Adjust the width as needed */
+    max-height: 90vh; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.sidebar-logo {
+    margin: auto 0;
+}
+
+.sidebar-logo a {
+    color: #FFF;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+.sidebar-item p {
+    color: #173A2B;
+    display: inline-block;
+    vertical-align: middle; /* Align elements vertically */
+    margin-right: 10px; /* Add some margin for spacing */
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 24px;
+}
+
+.sidebar-link img {
+    width: 60px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    margin-right: 10px; /* Add some margin for spacing */
+    display: inline-block;
+    vertical-align: middle; /* Align elements vertically */
+    margin-right: 10px; /* Add some margin for spacing */
+}
+
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link {
+    padding: 0px 20px;
+    color: #FFF;
+    display: block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    border-left: 3px solid transparent;
+}
+
+.sidebar-link i {
+    font-size: 1.1rem;
+    margin-right: .75rem;
+}
+
+a.sidebar-link:hover {
+    background-color: #E4EDD8;
+    border-left: 3px solid #173A2B;
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+/*** Navigation ***/
+.menu {
+    background-color: white;
+    position: relative;
+  }
+  
+  .navbar-toggler-icon.open .top-bar {
+    transform: translateY(5px) rotate(45deg) !important;
+  }
+  
+  .navbar-toggler-icon.open .middle-bar {
+    opacity: 0 !important;
+  }
+  
+  .navbar-toggler-icon.open .bottom-bar {
+    transform: translateY(-5px) rotate(-45deg) !important;
+  }
+  .navbar {
+    margin-top: 20px!important;
+    padding: 0px!important;
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    border-radius: 16px;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 15px 20px; /* Adjust padding as needed */
+    transition: background-color 0.3s, color 0.3s; /* Add transition for background color and text color */
+    border-radius: 16px;
+    font-family: "poppins",sans-serif!important;
+    color: #4d4d4d;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: black; /* Change text color on hover */
+    border-radius: 16px;
+  }
+
+  .nav-link:hover.active {
+    color: #4d4d4d;
+  }
+
+  
+  .navbar-brand img {
+    max-height: 250px;
+    max-width: 20%;
+    margin-left: 40px;
+  }
+  
+  .nav-item {
+    font-family: "poppins";
+    padding-right: 40px;
+    font-size: 30px;
+    background: white;
+  }
+  
+  .container-fluid {
+    background-color: white;
+  }
+
+
+/****HeroSpace***/
+.heroContainer {
+  padding: 0px!important;
+}
+
+.heroImage {
+  height: auto;
+}
+
+.heroContent .head {
+    font-family: "montagu slab",sans-serif;
+    font-size: 60px;
+    color: #173A2B;
+    background-color: #E4EDD8;
+    border-radius: 40px;
+    max-width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.heroContent h2{
+    height: auto;
+    font-family: "montagu slab",sans-serif;
+    font-size: 36px;
+    color: #173A2B!important;
+    line-height: 60px!important;
+}
+
+.heroContent .headliner {
+  font-family: "poppins",sans-serif;
+  font-weight: semi-bold;
+  color: #4d4d4d!important;
+}
+
+.sectionContainer h3 {
+  color: #4d4d4d;
+  font-weight: bold;
+  font-family: "poppins", sans-serif;
+}
+
+.heroContent p, ul {
+    font-family: "poppins", sans-serif;
+    font-size: 24px;
+    color: #4d4d4d;
+    line-height: 40px;
+}
+
+.lead {
+    font-weight: normal;
+    font-size: 24px;
+    color: #4d4d4d;
+}
+
+strong {
+  color: #304FBC;
+}
+
+.outlined-button {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    padding: 10px 20%;
+    border: 2px solid #173A2B;
+    background-color: transparent;
+    color: #173A2B;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 40px;
+    width: 150px;
+  }
+  
+.outlined-button:hover {
+    background-color: #4D4d4d;
+    color: #fff;
+  }
+ 
+
+
+/* Initially hide the home link */
+.home-link {
+    display: none;
+}
+
+/* Show the home link when navbar is collapsed */
+@media (max-width: 991.98px) {
+    .home-link {
+        display: block;
+        color: #4d4d4d;
+        text-decoration: none;
+    }
+
+    .homeIcon {
+        display: none; /* Hide the home button when the toggler is visible */
+    }
+
+    .navbar-toggler {
+        display: block; /* Ensure the toggler is visible */
+        margin-left: auto; /* Align the toggler to the right */
+        margin-right: 10%!important; /* Add padding to occupy the same space as the home button */
+    }
+
+    .navbar-nav {
+        margin-right: 10%;
+        padding-top: 20px;
+        text-align: right;
+    }
+}
+
+.section-title {
+  font-family: "montagu slab",sans-serif;
+  font-size: 60px;
+  color:#173A2B;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.imgContainer img {
+  max-width: 100%; /* Ensure the image does not exceed the width of its container */
+  height: auto; /* Maintain the aspect ratio of the image */
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.blurryImg {
+  display: flex;
+  justify-content: center;
+}
+
+.blurryImg img {
+  width: 80%;
+}
+
+.guerrillaTest .row .text-center p {
+  background-color: #E4EDD8;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 40px;
+  font-size: 24px;
+}
+
+.section-title {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.sectionContainer p {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.sectionContainer {
+  margin-bottom: 100px;
+}
+
+.sectionContainer h2 {
+  padding-bottom: 20px!important;
+  font-size: 36px;
+}
+
+section {
+  padding-bottom: 100px;
+}
+
+.toolsContainer {
+  display: flex;
+  justify-content: space-around; /* Horizontally center the images */
+  padding: 50px;
+}
+
+.toolsContainer img {
+  margin: 0 10px; /* Add some margin between the images */
+}
+
+.tool {
+  text-align: center;
+}
+
+.tool p {
+  padding-top: 20px; /* Adjust the value as needed */
+}
+
+.tool img {
+  display: block; /* Ensure the image is displayed as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+h3 {
+  padding-bottom: 50px;
+}
+
+p1 {
+  background-color: #E4EDD8;
+  border-radius: 40px;
+  font-size: 24px;
+  padding: 20px;
+}
+
+
+.sectionContainer ul {
+  padding-bottom: 50px;
+}
+
+a {
+  padding: 50px;
+}
+
+.section-title {
+  padding-bottom: 100px;
+}
+
+section a {
+  font-size: 36px;
+  text-decoration: underline;
+}
+
+.main {
+  background-color: white;
+}

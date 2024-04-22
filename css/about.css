@@ -1,0 +1,323 @@
+/* Navigation */
+.navbar-nav {
+    flex-direction: row;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 20px;
+  }
+  
+  .navbar-brand.mylogo {
+    width: 50%;
+  }
+  
+  .menu {
+    background-color: white;
+    position: relative;
+  }
+  
+  .navbar-toggler-icon.open .top-bar {
+    transform: translateY(5px) rotate(45deg) !important;
+  }
+  
+  .navbar-toggler-icon.open .middle-bar {
+    opacity: 0 !important;
+  }
+  
+  .navbar-toggler-icon.open .bottom-bar {
+    transform: translateY(-5px) rotate(-45deg) !important;
+  }
+  .navbar {
+    margin-top: 20px!important;
+    padding: 0px!important;
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    border-radius: 16px;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 15px 20px; /* Adjust padding as needed */
+    transition: background-color 0.3s, color 0.3s; /* Add transition for background color and text color */
+    border-radius: 16px;
+    font-family: "poppins",sans-serif!important;
+    color: #4d4d4d;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: black; /* Change text color on hover */
+    border-radius: 16px;
+  }
+  
+  .nav-link:hover.active {
+    color: #4d4d4d;
+  }
+  
+  
+  .navbar-brand img {
+    max-height: 250px;
+    max-width: 20%;
+    margin-left: 40px;
+  }
+  
+  .nav-item {
+    font-family: "poppins";
+    padding-right: 40px;
+    font-size: 30px;
+    background: white;
+  }
+  
+  .container-fluid {
+    background-color: white;
+  }
+  
+  
+  /* Footer */
+  footer {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600 !important;
+    font-style: normal;
+    color: #4d4d4d !important;
+    margin: 90px;
+    background-color: white!important;
+  }
+
+  footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+  }
+  
+  .footer-container {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+  
+  
+  /* Typography */
+  
+  h1 {
+    font-family: "poppins", sams-serif;
+    font-style: normal;
+    color: white;    
+    font-size: 60px!important;
+  }
+  
+  .head1 {
+    margin-bottom: 20px;
+  }
+  
+  .head {
+    transform: translateX(150px);
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 24px;
+    font-family: "poppins",sans-serif;
+    color: #4D4D4D;
+  }
+  
+  .p1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px!important;
+  }
+  
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400 !important;
+    font-style: normal;
+    text-align: center;
+    color: #4D4D4D;
+  }
+  
+  h3 {
+    font-family: "montagu slab", serif;
+    color: #173a2b!important;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 36px!important;
+  }
+  
+  h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400!important;
+    font-style: normal;
+    color: #4D4D4D;
+  }
+  
+  .subtext {
+    color: #304FBC;
+    font-weight: 500;
+    font-size: 30px!important;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+  }
+  
+  li {
+    margin-bottom: 40px;
+    /* Adjust spacing between list items */
+  }
+
+/* Section Header */
+.horizontal-divider {
+    width: 80%;
+    margin: auto;
+    /* Center the divider horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .divider-title {
+    padding: 100px;
+    font-family: "Montagu Slab", serif;
+    font-size: 48px;
+    font-style: bold;
+    color: #173A2B;
+    font-weight: bold;
+    /* Title font weight */
+    padding-right: 20px;
+    /* Add space to the right of the title */
+  }
+  
+  .divider-line {
+    display: flex;
+    flex: 1;
+    border-bottom: 2px solid #4d4d4d;
+    /* Horizontal line style */
+    margin-top: 6px;
+    /* Adjust vertical alignment */
+  }
+
+  
+/*********ABOUT PAGE*******/
+
+  /* Hero space styling */
+  .about .herospace {
+    position: relative;
+    height: auto; /* Change height to auto */
+    overflow: hidden;
+  }
+  
+  .about .background-image img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+  }
+  
+  /* Gradient overlay */
+  .about.herospace {
+    position: relative;
+  }
+  
+  .about.herospace .background-image {
+    position: relative;
+  }
+  
+  .about.herospace .background-image::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.8), transparent);
+    z-index: 1;
+  }
+  
+  /* Text overlay */
+  .about.herospace .content {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+    color: white;
+    padding: 0 20px;
+    width: 50%; /* Adjust the width as needed */
+  }
+  
+  .about.herospace .text-overlay p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+    font-weight: normal;
+  }
+
+  .about.herospace .text-overlay {
+    font-size: 24px;
+  }
+
+  .text-overlay {
+    padding-bottom: 20px;
+  }
+  
+  .about.herospace button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 40px;
+    display: flex;
+    vertical-align: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .about.herospace button:hover {
+    background-color: white;
+    color: #304FBC;
+  }
+
+
+/**** Mission & Vision****/
+.content-container {
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission {
+    padding-left: 100px!important;
+  }
+
+.hobbies {
+    padding-right: 100px!important;
+}
+
+.img-container img {
+    border-radius: 40px;
+    width: 100%!important;
+}
+  
+  .img-container img {
+    width: 100%; /* Ensure the image does not exceed the container width */
+  }
+
+.section .row {
+    padding-bottom: 100px;
+}
+
+.imagerows img {
+    max-width: 100%; /* Ensure images don't exceed the container width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 40px;
+  }
+  
